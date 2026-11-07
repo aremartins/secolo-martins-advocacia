@@ -1,13 +1,10 @@
 ---
 import Interna from '../../layouts/Interna.astro';
-const areas = [
- {slug:'compra-e-venda',title:'Compra e Venda de Imóveis',intro:'Assessoria jurídica nas etapas de negociação, análise documental e formalização de transações imobiliárias.',topics:['Análise de matrículas, certidões e documentação','Elaboração e revisão de instrumentos contratuais','Orientações sobre riscos jurídicos da operação']},
- {slug:'locacao',title:'Locação de Imóveis',intro:'Orientação jurídica para contratos de locação residencial e comercial, direitos e obrigações das partes.',topics:['Elaboração e revisão de contratos','Garantias locatícias e cláusulas contratuais','Questões relacionadas à vigência e ao encerramento da locação']},
- {slug:'leiloes',title:'Leilões Imobiliários',intro:'Análise jurídica das condições de aquisição de imóveis em leilões judiciais e extrajudiciais.',topics:['Leitura de editais e condições de arrematação','Verificação de registros, ônus e riscos conhecidos','Orientações sobre etapas posteriores à arrematação']},
- {slug:'regularizacao',title:'Regularização de Imóveis',intro:'Assessoria em questões documentais e registrais que podem afetar a situação jurídica de imóveis.',topics:['Análise da situação registral e documental','Orientações sobre procedimentos de regularização','Acompanhamento jurídico de medidas cabíveis ao caso']},
- {slug:'built-to-suit',title:'Built to Suit',intro:'Assessoria jurídica em contratos de locação estruturados para construção ou adaptação de imóveis às necessidades do futuro ocupante.',topics:['Estruturação e revisão de contratos','Definição de obrigações, prazos e responsabilidades','Análise de riscos e condições da operação']}
-];
-export function getStaticPaths(){return areas.map(area=>({params:{slug:area.slug},props:{area}}));}
+
+export async function getStaticPaths(){
+  const { areas } = await import('../../data/areas.js');
+  return areas.map(area => ({params:{slug:area.slug},props:{area}}));
+}
 const {area} = Astro.props;
 const base = import.meta.env.BASE_URL;
 ---
