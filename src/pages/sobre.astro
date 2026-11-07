@@ -1,0 +1,8 @@
+---
+import Interna from '../layouts/Interna.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Interna title="Sobre o advogado" description="Conheça Mauricio Secolo Martins, OAB/SP 293141, advogado desde 2009, com especializações em Direito Imobiliário e Previdenciário." active="sobre">
+<section class="page-heading"><div class="container"><span class="eyebrow">O escritório</span><h1>Sobre o advogado</h1><p>Atuação jurídica dedicada às relações e operações imobiliárias.</p></div></section>
+<section class="content"><div class="container profile"><img src={`${base}assets/mauricio-secolo-martins.jpg`} alt="Fotografia profissional de Mauricio Secolo Martins" loading="lazy" /><div><h2>​Mauricio Secolo Martins</h2><p><strong>OAB/SP 293141</strong></p><p>Advogado desde 2009, com atuação em Direito Imobiliário e experiência em compra e venda de imóveis, locações, leilões imobiliários, regularização de imóveis e operações Built to Suit.</p><p>Possui especializações em Direito Imobiliário e Direito Previdenciário pela Faculdade de Direito de São Bernardo do Campo.</p><p>O trabalho do escritório é orientado pela análise cuidadosa de cada situação e pela comunicação clara sobre as questões jurídicas envolvidas.</p><a class="button" href={`${base}contato/`}>Solicitar contato</a></div></div></section>
+</Interna>

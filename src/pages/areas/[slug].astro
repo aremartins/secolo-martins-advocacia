@@ -1,0 +1,14 @@
+---
+import Interna from '../../layouts/Interna.astro';
+
+export async function getStaticPaths(){
+  const { areas } = await import('../../data/areas.js');
+  return areas.map(area => ({params:{slug:area.slug},props:{area}}));
+}
+const {area} = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<Interna title={area.title} description={`${area.intro} Secolo Martins Advocacia, OAB/SP 293141.`} active="areas">
+<section class="page-heading"><div class="container"><span class="eyebrow">Áreas de atuação</span><h1>{area.title}</h1><p>{area.intro}</p></div></section>
+<section class="content"><div class="container narrow"><h2>Como funciona a assessoria jurídica</h2><p>A atuação é definida conforme as características e necessidades de cada situação, com avaliação da documentação e dos aspectos jurídicos pertinentes.</p><h2>Questões que podem ser analisadas</h2><ul>{area.topics.map(topic=><li>{topic}</li>)}</ul><p class="notice">As informações desta página têm caráter geral e não substituem a análise jurídica individualizada.</p><a class="button" href={`${base}contato/`}>Solicitar contato</a></div></section>
+</Interna>
