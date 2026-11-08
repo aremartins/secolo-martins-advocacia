@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140"><g fill="none" stroke="#c7a46a" stroke-width="3"><path d="M23 44 99 11l77 33"/><path d="M39 45 99 20l61 25"/></g><text x="100" y="115" font-family="Georgia,serif" font-size="85" text-anchor="middle" fill="#c7a46a" letter-spacing="-13">SM</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Monograma SM Secolo Martins">
+<g fill="none" stroke-linecap="square" stroke-linejoin="miter" stroke-width="14">
+<path stroke="#102B49" d="M27 66 V37 L99 104 L173 37 V173"/>
+<path stroke="#494B50" d="M54 42 V21 H151 V47 M151 87 V179 H47"/>
+<path stroke="#B69A60" d="M79 59 H125 M125 120 V151 H79 V124"/>
+<path stroke="#102B49" d="M27 137 V173 H54 M27 66 L91 124"/>
+</g></svg>
