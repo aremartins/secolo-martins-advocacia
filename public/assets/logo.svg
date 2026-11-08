@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140"><g fill="none" stroke="#c7a46a" stroke-width="3"><path d="M23 44 99 11l77 33"/><path d="M39 45 99 20l61 25"/></g><text x="100" y="115" font-family="Georgia,serif" font-size="85" text-anchor="middle" fill="#c7a46a" letter-spacing="-13">SM</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Monograma SM da Secolo Martins Advocacia">
+<title>Secolo Martins Advocacia</title>
+<g fill="none" stroke-linejoin="miter" stroke-linecap="square">
+<!-- S estrutural em grafite -->
+<path d="M52 63 V24 H151 V48 M151 87 V176 H47 V132" stroke="#494B50" stroke-width="14"/>
+<!-- M azul-marinho com vértice central -->
+<path d="M23 65 V35 L99 107 L177 35 V177" stroke="#102B49" stroke-width="15"/>
+<path d="M23 135 V176 H46 M23 65 L92 125" stroke="#102B49" stroke-width="15"/>
+<!-- Detalhes dourados internos -->
+<path d="M75 58 H125 M125 121 V150 H78" stroke="#B69A60" stroke-width="14"/>
+</g></svg>
